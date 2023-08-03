@@ -1,0 +1,507 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Common css start */
+
+:root{
+    --primaryColor:#252e30; 
+    --secondaryColor:#f2f2f1;
+    --tertiaryColor:#191f21;
+    --primaryFont:'Roboto', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--primaryFont);
+}
+
+.container{
+    width:1180px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/* Common css start */
+
+/* Header start */
+.navbar{
+    background-color: var(--primaryColor);
+}
+
+.logo{
+    width: 30%;
+    padding: 20px 15px;
+}
+
+.menu{
+    width: 70%;
+}
+
+.menu ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 30px 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+.menu ul li a:hover{
+    color: #2ecc71;
+}
+
+/* Header end */
+
+/* Banner start */
+#banner{
+    position: relative;
+   background-image: url(./img/Focal-Resume.jpg);
+   height: 700px;
+   background-repeat: no-repeat;
+   background-position:center;
+   background-size: cover;
+}
+.banner_text{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    position: absolute;
+    top:42% ; left: 25%;
+}
+
+.banner_btm{
+    position: absolute;
+    top: 55% ; left: 42%;
+}
+.banner_btm button{
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.banner_btm button:hover{
+    background-color: #2ecc71;
+
+}
+.banner_btm button:hover a{
+    color:var(--primaryColor);
+
+}
+
+.banner_cir span{
+    position: absolute;
+    bottom: 5%; right:5% ;
+}
+/* Banner end */
+
+/* values start */
+#values .value_txt{
+    width:33.33%;
+    padding: 10px 0;
+    margin: 50px 0;
+
+}
+#values .value_txt h4{
+    font-weight: 800;
+    font-size: 30px;
+    color: #566366;
+    padding-bottom: 30px;
+    
+}
+#values .value_txt p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    
+}
+
+/* values start */
+
+/* about me */
+#about_me{
+    background-color:var(--secondaryColor);
+}
+#about_me .about_img {
+    width: 50%;
+}
+#about_me .about_cont {
+   width: 50%;
+}
+#about_me .about_txt {
+    height: 50%;
+    padding: 30px 0;
+}
+#about_me .about_txt h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    color:#566366;
+    padding: 5px 0;
+}
+#about_me p {
+    font-size: 16px;
+    font-weight: 400;
+    color:#919191;
+    line-height: 30px;
+}
+#about_me .about_boxber {
+    height: 50%;
+}
+#about_me .about_box {
+    width: 50%;
+    padding: 25px 0;
+}
+#about_me .about_box_img {
+    width: 20%;
+}
+#about_me .about_box_txt {
+    width: 80%;
+
+}
+#about_me h4{
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 800;
+    color:#566366;
+}
+/* about me end */
+
+/* my skills start */
+#my_skills .skills_text{
+    width: 50%;
+    padding: 30px 10px;
+}
+#my_skills .skills_img{
+    width: 50%;
+    padding: 30px 20px;   
+}
+
+#my_skills .skills_text h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    color:#566366;
+    padding: 50px 0;
+}
+#my_skills .skills_text p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#919191;
+    line-height: 30px;
+}
+button{
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #fff;
+    border: 2px solid #2ecc71;
+    margin: 50px 0;
+}
+button a{
+    color: #2ecc71;
+}
+button:hover{
+    background-color: #2ecc71;
+}
+button:hover > a{
+    color: #fff
+}
+
+/* skills start end */
+
+/* resume start */
+#resume{
+    background-color: var(--secondaryColor);
+    padding: 20px 0;
+}
+#resume h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    color:#566366;
+    padding: 50px 0;
+}
+#resume p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color:#919191;
+    line-height: 30px;
+}
+#resume button{
+    display: block;
+    margin:20px auto;
+}
+/* resume end */
+
+/* my_education start */
+#my_education{
+    margin: 30px 0;
+    border-bottom: 1px solid #919191;
+}
+#my_education .left_txt{
+    width: 50%;
+}
+#my_education .left_txt h3{
+    color: #566366;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+#my_education .left_txt p{ 
+    color: #919191;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+#my_education .right_txt{
+    width: 50%;
+}
+#my_education .right_txt h4{
+    color: #566366;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+#my_education .right_txt p{ 
+    color: #919191;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+#my_education button{ 
+    color:#2ecc71;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+#my_education button:hover{ 
+    color:#fff;
+}
+
+/* my_education end */
+
+/*work_experience start  */
+
+#work_experience{
+    margin: 30px 0;
+}
+#work_experience .left_txt{
+    width: 50%;
+}
+#work_experience .left_txt h3{
+    color: #566366;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+#work_experience .left_txt p{ 
+    color: #919191;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+#work_experience .right_txt{
+    width: 50%;
+}
+#work_experience .right_txt h4{
+    color: #566366;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+#work_experience .right_txt p{ 
+    color: #919191;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+#work_experience button{ 
+    color:#2ecc71;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+#work_experience button:hover{ 
+    color:#fff;
+}
+
+/*work_experience end  */
+
+/* John Stone start */
+
+#john_stone {
+    margin:30px 0;
+    padding: 50px 0;
+    background-color: var(--secondaryColor);
+}
+#john_stone p{
+    font-size: 24px;
+    font-weight: 400;
+    color:#919191;
+    text-align: center;
+}
+#john_stone h5{
+    font-size: 18px;
+    font-weight: 400;
+    color: #566366;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+#john_stone img{
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* John Stone end */
+
+/* Portfolio start */
+#portfolio{
+    margin: 30px 0;
+    padding: 30px 0;
+}
+#portfolio .txt h3{
+    font-size: 30px;
+    font-weight: 800;
+    color: #566366;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+}
+#portfolio .txt p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    text-align: center;
+    padding: 20px 0;
+}
+#portfolio img{
+    margin: 10px;
+}
+
+/*Portfolio end  */
+
+/*contact me start  */
+
+#contact_me{
+    background-color: var(--primaryColor);
+    padding: 30px 0;
+
+}
+#contact_me .left_side{
+    width: 50%;
+    
+}
+#contact_me .left_side h3{
+    font-size: 30px;
+    font-weight: 800;
+    color:#ffff;
+    padding: 10px 0;
+}
+#contact_me .left_side p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#919191;
+    padding: 10px 0;
+}
+#contact_me .left_side address{
+    font-size: 18px;
+    font-weight: 400;
+    color:#919191;
+    padding: 10px 0;
+}
+#contact_me .left_side span{
+    font-size: 18px;
+    font-weight: 400;
+    color:#919191;
+    display: block;
+}
+#contact_me .left_side span a{
+    font-size: 18px;
+    font-weight: 400;
+    color:#919191;
+}
+#contact_me .right_side{
+    width: 50%;   
+}
+#contact_me .right_side label{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    display: block;
+}
+#contact_me .right_side input,textarea{
+    padding: 10px 5px;
+    margin: 20px 0;
+    color: #ffffff;
+    background-color: #4b5456;
+}
+#contact_me .right_side button{
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #191f21;
+    padding: 10px 20px;
+    border: none;
+    margin: 0;
+}
+#contact_me .right_side button:hover{
+    color: #191f21;
+    background-color: #fff;
+}
+
+/*contact me end  */
+
+/*footer start */
+
+#copy{
+    background-color: #191f21;
+    padding: 30px 0;
+}
+#copy .txt p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5456;
+    text-align: center;
+    padding: 10px 0;
+}
+#copy .log {
+    text-align: center;
+    padding: 10px 0;
+}
+#copy .log img{
+   padding: 0 5px;
+}
+
+/*footer end */
